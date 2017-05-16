@@ -6,7 +6,7 @@ Laboratório da turma de Programação para Web.
 
 ### Para fazer clone.
 
-`git clone https://github.com/caionaweb/FederalOdonto
+`git clone https://github.com/caionaweb/FederalOdonto`
 
 ### Para rodar com o Tomcat na porta padrão (8080).
 
