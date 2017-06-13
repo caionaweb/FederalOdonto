@@ -1,0 +1,102 @@
+<?php 
+	include('header.php'); 
+	include('navigation.php');
+	
+	echo "<link rel=\"stylesheet\" type=\"text/css\" href='".base_url()."css/style.css'>";
+	echo "<script type=\"text/javascript\" src=\"".base_url()."js/dynamic.js\"></script>";
+	echo "<script type=\"text/javascript\" src=\"".base_url()."js/patientdb.js\"></script>";
+
+	$session_data = $this->session->userdata('logged_in');
+     	$usernamelog = $session_data['username'];
+
+	$session_data = $this->session->userdata('current_patient');
+	$id = $session_data['id'];
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+<link href="<?php echo base_url(); ?>css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<script src="<?php echo base_url(); ?>js/jquery-1.9.1.js"></script>
+	<script src="<?php echo base_url(); ?>js/jquery-ui-1.10.3.custom.js"></script>
+
+<?php $session_data = $this->session->userdata('logged_in');
+     	$sect = $session_data['section'];
+	$section = "";
+	foreach($sect as $row){
+		if($row != "System Maintenance"){
+			$section = $row;
+			break;
+		}
+	}
+?>
+   <title>Faculty Tasks - <?php echo $section; ?></title>
+<link rel="shortcut icon" href="<?php echo base_url(); ?>images/upcd-20140224-favicon.ico">
+ </head>
+
+ <body>
+  
+<div class="maindiv">	
+<div align="left"><br><a href="<?php echo base_url();?>index.php/home"> Go Back </a></div><br>
+
+	<table align ="center" class="altcolor" style="width:90%; left:5%; text-align: center;">
+		<tr class="header">
+			<td colspan=6> Tasks Lists
+		</tr>
+		<tr>
+			<td>
+			<td> <b>Tasks</b>
+			<td> <b>Updated By</b>
+			<td> <b>Update Date</b>
+			<td> <b>Patient Name</b>
+		</tr>
+		<?php 
+			$ctr = 0;
+			if($info){
+				$patientname="";
+				$count = sizeof($info);
+				foreach($info as $row){
+					if($row['patientdashboardversionID'] && $row['updateStatus7'] == "Pending"){
+						$ctr++;	
+						echo "<tr><td> $ctr ";
+						echo "<td> Verify Referral to ".$row['section7'];
+						$user = $this->user->getUserInfo($row['updatedBy7']);
+						echo "<td>".$user['userFName']." ".substr($user['userMName'], 0, 1).". ".$user['userLName']; 
+						echo "<td>".$row['updateDate7'];
+						$patient = $this->patient->getPatient($row['UPCD_ID7']);
+						foreach($patient as $row2){
+							$patientname = $row2['patientFName']." ".substr($row2['patientMName'], 0, 1).". ".$row2['patientLName']; 
+						}
+						echo "<td><a href=".base_url()."index.php/loaddashboard/verifyentry/".$row['UPCD_ID7'].">".$patientname;
+						echo "</tr>";				
+					}
+				}
+			}
+			if($info2){
+				foreach($info2 as $row){
+					$ctr++;
+					$patientname = "";
+					$patient = $this->patient->getPatient($row['UPCD_ID']);
+					foreach($patient as $row2){
+						$patientname = $row2['patientFName']." ".substr($row2['patientMName'], 0, 1).". ".$row2['patientLName'];
+					}
+					echo "<tr> <td> $ctr";
+					echo "<td>".$row['taskdescription'];
+					echo "<td> <i> Pending </i>";
+					echo "<td> <i> Pending </i>";
+					echo "<td><a href=".base_url()."index.php/loaddashboard/claimpatient/".$row['UPCD_ID'].">".$patientname."</a></tr>";
+				}
+
+			}
+			if($ctr==0) echo "<tr> <td colspan=5> <br> No tasks found </br>";
+		?>
+		
+	</table><br>
+
+	</form>	
+</div><br><br>
+
+ </body>
+</html>
+
+
