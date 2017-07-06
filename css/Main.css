@@ -1,0 +1,54 @@
+.tableCalendario{
+	width: 280px;
+	align-content: center;
+	padding: 20px;
+	background-color: #7FCDD4;
+}
+
+h1{
+	text-align: center;
+	padding-left: 25px;
+}
+.borda{
+	border: 1px solid #50AAFC;
+}
+.container_calendario{
+	width: 280px;
+	padding: 20px;
+}
+
+.setaEsquerda{
+	font-size: 0px;
+	background-image: url(imagens/setaEsquerda.png);
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.setaDireita{
+	font-size: 0px;
+	background-image: url(imagens/setaDireita.png);
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	left: 190px;
+}
+.dia{
+	width: 20px;
+	height: 20px;
+	font-size: 15px;
+	text-align: center;
+}
+.semana{
+	font-size: 125%;
+	text-align: center;
+}
+.podeAgendar{
+	color: black;
+}
+.naoPodeAgendar{
+	color: grey;
+}
