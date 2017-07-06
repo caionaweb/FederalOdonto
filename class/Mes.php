@@ -86,7 +86,7 @@
 		public function preencheTd($linha, $coluna){
 			$dia = $this->retornaDia($linha, $coluna);
 			if($this->podeAgendar($dia, $coluna)){
-				return "<td class='borda dia'> <a class='podeAgendar' href= 'formularioAgendamento.php" . $this->formularioPara($dia) . " '> " . $dia . "</a></td>";
+				return "<td class='borda dia'> <a class='podeAgendar' href=\"javascript:carregaForm('formularioAgendamento.php" . $this->formularioPara($dia) . " ')\"> " . $dia . "</a></td>";
 			}else{
 				return "<td class='borda dia naoPodeAgendar'>" . $dia . "</td>";
 			}			
@@ -105,7 +105,7 @@
 		}
 
 		private function podeAgendar($dia, $coluna){
-			if ($this->mesAtual > date('m') && $this->ano == date('Y') && $coluna != 0  && $coluna != 0 || $dia >= date('j') && $this->mesAtual == date('m') && $this->ano == date('Y') && $coluna != 0  && $coluna != 0) {
+			if ($this->mesAtual > date('m') && $this->ano == date('Y') && $coluna != 0  && $coluna != 6 || $dia >= date('j') && $this->mesAtual == date('m') && $this->ano == date('Y') && $coluna != 0  && $coluna != 6) {
 				return true;
 			}
 			return false;

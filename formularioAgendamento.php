@@ -1,53 +1,92 @@
-<?php
-	require_once "CarregaClasse.php";
-	require_once "conecta.php";
-	require_once "cabecalho.php";
+	<?php
+		require_once "CarregaClasse.php";
+		require_once "conecta.php";
+		$dia = $_GET['setDia'];
+		$mes = $_GET['setMes'];
+		$ano = $_GET['setAno'];
+		$numeroMes = $_GET['setNumeroMes'];
+			
+			$horarioDao = new HorarioDAO ($conexao);
 
-	$dia = $_GET['setDia'];
-	$mes = $_GET['setMes'];
-	$ano = $_GET['setAno'];
-	$numeroMes = $_GET['setNumeroMes'];
+			$listaHorarios = $horarioDao->listaHorarios($dia, $mes);
+			
+		?>
+		<!DOCTYPE html>
+	<html>
+		<head>
+					<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+				<script src="js/jquery.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/funcoes.js"></script>
+			</head>
+	<body>
+
+
+	<input type="hidden" name="dia" value="<?=$dia?>">
+					<input type="hidden" name="mes" value="<?=$mes?>">
+						
+	<form class="form-horizontal">
+	<fieldset>
+	<!-- Form Name -->
+	<legend>Conformação</legend>
+
+
+	<!-- Select Basic -->
+	<div class="form-group">
+	<label class="col-md-4 control-label" for="selectbasic">Horários Disponíveis</label>
+	<div class="col-md-4">
+		<select id="selectbasic" name="selectbasic" class="form-control">
+								<?php
+									foreach ($listaHorarios as $horario) : ?>
+										<option><?=$horario['horario']?></option>
+									<?php 
+										endforeach
+									?>
+		</select>
+	</div>
+	</div>
+
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-md-4 control-label" for="nome">Nome: </label>  
+	<div class="col-md-4">
+	<input id="nome" name="nome" type="text" placeholder="Seu Nome" class="form-control input-md" required="">
 		
-		$horarioDao = new HorarioDAO ($conexao);
+	</div>
+	</div>
 
-		$listaHorarios = $horarioDao->listaHorarios($dia, $mes);
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-md-4 control-label" for="telefone">Telefone</label>  
+	<div class="col-md-4">
+	<input id="telefone" name="telefone" type="text" placeholder="Telefone para contato" class="form-control input-md" required="">
 		
-	  ?>
-	  <div class='container'>
-		  	<h1>Formulário de Agendamento</h1>
-		  	<form action="agendar.php" method="post" >
-		  		<input type="hidden" name="dia" value="<?=$dia?>">
-		  		<input type="hidden" name="mes" value="<?=$mes?>">
-		  		<table>
-		  			<tr>
-		  				<td><p> Horários Disponíveis para o dia <?=$dia?> do mês de <?=$mes?> . </p> </td>
-		  				<td>
-		  					<select name="horario">
+	</div>
+	</div>
 
-		  					<?php
-		  						foreach ($listaHorarios as $horario) : ?>
-		  							<option><?=$horario['horario']?></option>
-		  						<?php 
-		  							endforeach
-		  					  	?>
-		  				</td>
-		  			</tr>
-		  			<tr>
-		  				<td>Nome: <input type="text" name="nome"></td>
-		  			</tr>
-		  			<tr>
-		  				<td>Email: <input type="email" name="email"></td>
-		  			</tr>
-		  			<tr>
-		  				<td>Telefone: <input type='phone' name="telefone"></td>
-		  			</tr>
-		  			<tr>
-		  				<td>
-		  				<button class="btn btn-primary" type="submit">Agendar</button>
-		  				</td>
-		  			</tr>
-		  		</table>
-		  	</form>
-	  	</div>
-  	</body>
-</html>
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-md-4 control-label" for="email">E-mail</label>  
+	<div class="col-md-4">
+	<input id="email" name="email" type="text" placeholder="Seu Email" class="form-control input-md" required="">
+		
+	</div>
+	</div>
+
+	<!-- Button (Double) -->
+	<div class="form-group">
+	<label class="col-md-4 control-label" for="agendar"></label>
+	<div class="col-md-4">
+		<button id="agendar" name="agendar" class="btn btn-success">Agendar</button>
+		<button id="cancelar" name="cancelar" class="btn btn-danger" onclick="carregaMes()">Cancelar</button>
+	</div>
+	</div>
+
+	</fieldset>
+	</form>
+
+
+		</body>
+	</html>
