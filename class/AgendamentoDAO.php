@@ -1,14 +1,19 @@
-<?php 
-	class AgendamentoDAO{
-		private $conexao;
+<?php
 
-		function __construct($conexao)	{
-			$this->conexao = $conexao;
-		}
+class AgendamentoDAO
+{
+    private $conexao;
 
-		function salvaAgendamento($mes, $usuarioId, $horarioId){
-			$query = "insert into agendamentos (mes, usuario_id, horario_id) values ('{$mes}', $usuarioId, $horarioId)";
-			return mysqli_query($this->conexao, $query);
-		}
-	}
- ?>
+    function __construct($conexao)
+    {
+        $this->conexao = $conexao;
+    }
+
+    function salvaAgendamento($mes, $usuarioId, $horarioId)
+    {
+        $query = "insert into agendamentos (mes, usuario_id, horario_id) values ('{$mes}', $usuarioId, $horarioId)";
+        return mysqli_query($this->conexao, $query);
+    }
+}
+
+?>

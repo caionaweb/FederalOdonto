@@ -1,493 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>FederalOdonto</title>
-		<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-		<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-		<link rel="shortcut icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-06/61712a698ed488328c0c60f379023ace.ico">
-		
-	 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-			<script src="js/jquery.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FederalOdonto</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords"
+          content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <link rel="shortcut icon"
+          href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-06/61712a698ed488328c0c60f379023ace.ico">
 
-	</head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
 
-					<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+</head>
 
-		<!--banner-->
-	<section id="banner" class="banner">
-		<div class="bg-color">
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="col-md-12">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<!--<a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>--> 
-						</div>
-						<div class="collapse navbar-collapse navbar-right" id="myNavbar">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#banner">Início</a></li>
-								<li class=""><a href="#service">Serviços</a></li>
-								<li><a href="#" data-toggle="modal" data-target="#login" onclick="carregaMes()">Agendar Consulta</a></li>
-								<li class=""><a href="#testimonial">Depoimentos</a></li>
-								<li class=""><a href="#about">Sobre Nós</a></li>
-								<li class=""><a href="#doctor-team">Nossos Colaboradores</a></li>
-								<li class=""><a href="#contact">Fale Conosco</a></li>
-								
-								
-							</ul>
-						</div>
-				</div>
-				</div>
-			</nav>
-			<div class="container">
-				<div class="row">
-					<div class="banner-info">
-						<div class="banner-logo text-center">
-							
-						</div>
-						<div class="banner-text text-center">
-							<h1 class="white">Cuidando da sua Saúde dental, todo o tempo.</h1>
-							<p>Conheça nosso serviço odontológico<br>conhecido e recomendado por diversos clientes satisfeitos.</p>
-							<a href="#contact" class="btn btn-appoint">Entre em Contato!</a>
-						</div>
-						<div class="overlay-detail text-center">
-							 <a href="#service"><i class="fa fa-angle-down"></i></a>
-						</div>		
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ banner-->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-	<!--login-->
-			<form id="logingform" action="/" method="post">
-				<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-								<h4 class="modal-title" id="myModalLabel">Datas Disponíveis</h4>
-							</div>
-							
-							<div class="modal-body">
-<center>
-   
-
-   
-        <div id='mes'>
-
-</div>
-
-</center>
+<!--banner-->
+<section id="banner" class="banner">
+    <div class="bg-color">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--<a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>-->
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#banner">Início</a></li>
+                            <li class=""><a href="#service">Serviços</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="carregaMes()">Agendar
+                                    Consulta</a></li>
+                            <li class=""><a href="#testimonial">Depoimentos</a></li>
+                            <li class=""><a href="#about">Sobre Nós</a></li>
+                            <li class=""><a href="#doctor-team">Nossos Colaboradores</a></li>
+                            <li class=""><a href="#contact">Fale Conosco</a></li>
 
 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="banner-info">
+                    <div class="banner-logo text-center">
 
-											
-							</div>
-						</div>
-					</div>
-				</div><!-- end become a member modal -->
-				</form> <!-- end login form -->
+                    </div>
+                    <div class="banner-text text-center">
+                        <h1 class="white">Cuidando da sua Saúde dental, todo o tempo.</h1>
+                        <p>Conheça nosso serviço odontológico<br>conhecido e recomendado por diversos clientes
+                            satisfeitos.</p>
+                        <a href="#contact" class="btn btn-appoint">Entre em Contato!</a>
+                    </div>
+                    <div class="overlay-detail text-center">
+                        <a href="#service"><i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ banner-->
 
-			
-	<!--/login>
-	<!--service-->
-	<section id="service" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<h2 class="ser-title">Nosso Serviço</h2>
-					<hr class="botm-line">
-					<p>Nossos dentistas estão aptos a realizarem diversos tipos de tratamentos, (pode citar as áreas aqui, por exemplo cirurgia, manutenção de aparelho dental, etc) com estrutura composta por equipamentos de ponta para alcançar resultados sempre eficientes aos pacientes.</p>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-stethoscope"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Suporte 24 horas por dia</h4>
-							<p>Nosso atendimento é rápido e está sempre disponível para ajudar você através de diversas plataformas online. Contate-nos!</p>
-						</div>
-					</div>
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-ambulance"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Serviços De Emergência</h4>
-							<p>Estamos à disposição dos nossos pacientes para qualquer tipo de emergência.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-user-md"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Grupo de Profissionais</h4>
-							<p>Nossos profissionais têm especialização em diferentes áreas odontológicas, por isso a clínica oferece serviços e tratamentos diversos para todo o tipo de pessoa, com qualquer faixa etária.</p>
-						</div>
-					</div>
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-medkit"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Serviço Diferenciado</h4>
-							<p>Além de atendermos também à crianças, nosso serviço de agendamento pode ser feito por telefone ou online.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ service-->
-	<!--cta-->
-	<section id="cta-1" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="schedule-tab">
-					<div class="col-md-4 col-sm-4 bor-left">
-						<div class="mt-boxy-color"></div>
-						<div class="medi-info">
-							<h3>Os melhores Preços</h3>
-						<p></p>
-						<a href="#" class="medi-info-btn">Saiba Mais</a>		    	
-					</div>
-					</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="medi-info">
-							<h3>O Melhor Atendimento</h3>
-						<p></p>
-						<a href="#" class="medi-info-btn">Saiba Mais</a>	
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 mt-boxy-3">
-					<div class="mt-boxy-color"></div>
-					<div class="time-info">
-								<h3>Horário de Funcionamento</h3>
-							<table style="margin: 8px 0px 0px;" border="1">
-								<tbody>
-									<tr>
-									<td>Segunda à Sexta</td>
-									<td>8:00 - 17:00</td>
-									</tr>
-									<tr>
-									<td>Sábado</td>
-									<td>9:30 - 17:30</td>
-									</tr>
-									<tr>
-									<td>Domingo</td>
-									<td>9:30 - 15:00</td>
-									</tr>
-								</tbody>
-							</table>				    		
-					</div>
-				</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--cta-->
-	<!--about/Empresa-->
-	<section id="about" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-4 col-xs-12">
-							<div class="section-title">
-								<h2 class="head-title lg-line">Nome da empresa</h2>
-								<hr class="botm-line">
-								<p class="sec-para">Nosso maior objetivo é a sua satisfação e bem-estar. Queremos sempre alcançar melhores resultados, pensando em você!</p>
-								<a href="" style="color: #0cb8b6; padding-top:10px;">Saiba Mais..</a>
-							</div>
-					</div>
-					<div class="col-md-9 col-sm-8 col-xs-12">
-						 <div style="visibility: visible;" class="col-sm-9 more-features-box">
-								<div class="more-features-box-text">
-									<div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-									<div class="more-features-box-text-description">
-										<h3>É importante que você conheça.</h3>
-										<p>Nossa empresa possui X dentistas e atende no mercado há X anos!</p>
-								</div>
-								</div>
-								<div class="more-features-box-text">
-									<div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-									<div class="more-features-box-text-description">
-										<h3>Porquê escolher a gente ?</h3>
-										<p>Contamos com profissionais preparados e qualificados, com uma estrutura e um local que está sempre pronto para atender a você e sua família.</p>
-								</div>
-												</div>
-							</div>
-					</div>
-			</div>
-		</div>
-	</section>
-	<!--/ about/SobreNos-->
-	<!--doctor team-->
-	<section id="doctor-team" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="ser-title">Conheça nossos Funcionários!</h2>
-					<hr class="botm-line">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="thumbnail"> 
-							<img src="img/doctor1.jpg" alt="..." class="team-img">
-							<div class="caption">
-								<h3>Pedro Andrade</h3>
-								<p>Chemical</p>
-								<ul class="list-inline">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="thumbnail"> 
-							<img src="img/doctor2.jpg" alt="..." class="team-img">
-							<div class="caption">
-								<h3>Higor</h3>
-								<p>ugly one</p>
-								<ul class="list-inline">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="thumbnail"> 
-							<img src="img/doctor3.jpg" alt="..." class="team-img">
-							<div class="caption">
-								<h3>Elma</h3>
-								<p>Função</p>
-								<ul class="list-inline">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="thumbnail"> 
-							<img src="img/doctor4.jpg" alt="..." class="team-img">
-							<div class="caption">
-								<h3>Caio</h3>
-								<p>Group Guardian</p>
-								<ul class="list-inline">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-	</section>
-	<!--/ doctor team-->
-	<!--testimonial-->
-	<section id="testimonial" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="ser-title">O que nossos Clientes estão falando?</h2>
-					<hr class="botm-line">
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="testi-details">
-						<!-- Paragraph -->
-						<p>Meu Deus, eles são muito foda.</p>
-					</div>
-					<div class="testi-info">
-						<!-- User Image -->
-						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-						<!-- User Name -->
-						<h3>untrusty<span>Cliente</span></h3>
-					</div>
-				</div>
-					<div class="col-md-4 col-sm-4">
-					<div class="testi-details">
-						<!-- Paragraph -->
-						<p>Cara, que galera bacana, muito bom.</p>
-					</div>
-					<div class="testi-info">
-						<!-- User Image -->
-						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-						<!-- User Name -->
-						<h3>untrusty<span>Cliente</span></h3>
-					</div>
-				</div>
-					<div class="col-md-4 col-sm-4">
-					<div class="testi-details">
-						<!-- Paragraph -->
-						<p>Amigos, podem confiar, olhem as fotos dessa equipe.</p>
-					</div>
-					<div class="testi-info">
-						<!-- User Image -->
-						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-						<!-- User Name -->
-						<h3>untrusty<span>Cliente</span></h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ testimonial-->
-	<!--cta 2-->
-	<section id="cta-2" class="section-padding">
-		<div class="container">
-			<div class=" row">
-				<div class="col-md-2"></div>
-							<div class="text-right-md col-md-4 col-sm-4">
-								<h2 class="section-title white lg-line"> Algumas curiosidades<br> Sobre Nós</h2>
-							</div>
-							<div class="col-md-4 col-sm-5">
-								Texto sobre informações sobre a empresa.
-								<p class="text-right text-primary"><i>— Nome do Dono</i></p>
-							</div>
-							<div class="col-md-2"></div>
-					</div>
-		</div>
-	</section>
-	<!--cta-->
-	<!--contact-->
-	<section id="contact" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="ser-title">Contato</h2>
-					<hr class="botm-line">
-				</div>
-				<div class="col-md-4 col-sm-4">
-						<h3>Informação de contato</h3>
-						<div class="space"></div>
-						<p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>Nome da Rua<br>
-							Complemento</p>
-						<div class="space"></div>
-						<p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>Email@nomedaempresa.com</p>
-						<div class="space"></div>
-						<p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>(ddd) Número da empresa</p>
-					</div>
-				<div class="col-md-8 col-sm-8 marb20">
-					<div class="contact-info">
-							<h3 class="cnt-ttl">Fale conosco</h3>
-							<div class="space"></div>
-														<div id="sendmessage">Sua mensagem foi enviada, obrigado!</div>
-														<div id="errormessage"></div>
-							<form action="" method="post" role="form" class="contactForm">
-									<div class="form-group">
-																		<input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Seu nome" data-rule="minlen:4" data-msg="Por favor, no mínimo 4 digitos" />
-																		<div class="validation"></div>
-																</div>
-																<div class="form-group">
-																		<input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="Por favor, use um e-mail válido" />
-																		<div class="validation"></div>
-																</div>
-																<div class="form-group">
-																		<input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Por favor, no mínimo 8 digitos no assunto" />
-																		<div class="validation"></div>
-																</div>
-																<div class="form-group">
-																		<textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Por favor, escreva algo pra nós." placeholder="Mensagem"></textarea>
-																		<div class="validation"></div>
-																</div>
-																
-								<div class="form-action">
-									<button type="submit" class="btn btn-form">Enviar Mensagem</button>
-								</div>
-							</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ contact-->
-	<!--footer-->
-	<footer id="footer">
-		<div class="top-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-4 marb20">
-							<div class="ftr-tle">
-								<h4 class="white no-padding">Sobre Nós</h4>
-							</div>
-							<div class="info-sec">
-								<p>Somos uma empresa séria e comprometida com a satisfação do cliente.</p>
-							</div>
-					</div>
-					<div class="col-md-4 col-sm-4 marb20">
-						<div class="ftr-tle">
-							<h4 class="white no-padding">Atalhos</h4>
-						</div>
-						<div class="info-sec">
-							<ul class="quick-info">
-								<li><a href="index.html"><i class="fa fa-circle"></i>Início</a></li>
-								<li><a href="#service"><i class="fa fa-circle"></i>Serviços</a></li>
-								<li><a href="#contact"><i class="fa fa-circle"></i>Fale Conosco</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4 marb20">
-						<div class="ftr-tle">
-							<h4 class="white no-padding">Siga-nos nas redes sociais</h4>
-						</div>
-						<div class="info-sec">
-							<ul class="social-icon">
-								<li class="bglight-blue"><i class="fa fa-facebook"></i></li>
-								<li class="bgred"><i class="fa fa-google-plus"></i></li>
-								<li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
-								<li class="bglight-blue"><i class="fa fa-twitter"></i></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-line">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						© Copyright Ktracaengemark. Todos os direitos reservados.
-												<div class="credits">
-														<!-- 
-																All the links in the footer should remain intact. 
-																You can delete the links only if you purchased the pro version.
-																Licensing information: https://bootstrapmade.com/license/
-																Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
-														-->
-														Feito Por <a href="https://www.ktracaengemark.com.br/site">Ktracaengemark</a>
-												</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--/ footer-->
-		
-	
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/custom.js"></script>
-		<script src="js/funcoes.js"></script>
+<!--login-->
+<form id="logingform" action="/" method="post">
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                                class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Datas Disponíveis</h4>
+                </div>
 
-	
-	</body>
+                <div class="modal-body">
+                    <center>
+
+
+                        <div id='mes'>
+
+                        </div>
+
+                    </center>
+
+
+                </div>
+            </div>
+        </div>
+    </div><!-- end become a member modal -->
+</form> <!-- end login form -->
+
+
+<!--/login>
+<!--service-->
+<section id="service" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <h2 class="ser-title">Nosso Serviço</h2>
+                <hr class="botm-line">
+                <p>Nossos dentistas estão aptos a realizarem diversos tipos de tratamentos, (pode citar as áreas aqui,
+                    por exemplo cirurgia, manutenção de aparelho dental, etc) com estrutura composta por equipamentos de
+                    ponta para alcançar resultados sempre eficientes aos pacientes.</p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-stethoscope"></i>
+                    </div>
+                    <div class="icon-info">
+                        <h4>Suporte 24 horas por dia</h4>
+                        <p>Nosso atendimento é rápido e está sempre disponível para ajudar você através de diversas
+                            plataformas online. Contate-nos!</p>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-ambulance"></i>
+                    </div>
+                    <div class="icon-info">
+                        <h4>Serviços De Emergência</h4>
+                        <p>Estamos à disposição dos nossos pacientes para qualquer tipo de emergência.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-user-md"></i>
+                    </div>
+                    <div class="icon-info">
+                        <h4>Grupo de Profissionais</h4>
+                        <p>Nossos profissionais têm especialização em diferentes áreas odontológicas, por isso a clínica
+                            oferece serviços e tratamentos diversos para todo o tipo de pessoa, com qualquer faixa
+                            etária.</p>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-medkit"></i>
+                    </div>
+                    <div class="icon-info">
+                        <h4>Serviço Diferenciado</h4>
+                        <p>Além de atendermos também à crianças, nosso serviço de agendamento pode ser feito por
+                            telefone ou online.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ service-->
+<!--cta-->
+<section id="cta-1" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="schedule-tab">
+                <div class="col-md-4 col-sm-4 bor-left">
+                    <div class="mt-boxy-color"></div>
+                    <div class="medi-info">
+                        <h3>Os melhores Preços</h3>
+                        <p></p>
+                        <a href="#" class="medi-info-btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="medi-info">
+                        <h3>O Melhor Atendimento</h3>
+                        <p></p>
+                        <a href="#" class="medi-info-btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mt-boxy-3">
+                    <div class="mt-boxy-color"></div>
+                    <div class="time-info">
+                        <h3>Horário de Funcionamento</h3>
+                        <table style="margin: 8px 0px 0px;" border="1">
+                            <tbody>
+                            <tr>
+                                <td>Segunda à Sexta</td>
+                                <td>8:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>9:30 - 17:30</td>
+                            </tr>
+                            <tr>
+                                <td>Domingo</td>
+                                <td>9:30 - 15:00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--cta-->
+<!--about/Empresa-->
+<section id="about" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="section-title">
+                    <h2 class="head-title lg-line">Nome da empresa</h2>
+                    <hr class="botm-line">
+                    <p class="sec-para">Nosso maior objetivo é a sua satisfação e bem-estar. Queremos sempre alcançar
+                        melhores resultados, pensando em você!</p>
+                    <a href="" style="color: #0cb8b6; padding-top:10px;">Saiba Mais..</a>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12">
+                <div style="visibility: visible;" class="col-sm-9 more-features-box">
+                    <div class="more-features-box-text">
+                        <div class="more-features-box-text-icon"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="more-features-box-text-description">
+                            <h3>É importante que você conheça.</h3>
+                            <p>Nossa empresa possui X dentistas e atende no mercado há X anos!</p>
+                        </div>
+                    </div>
+                    <div class="more-features-box-text">
+                        <div class="more-features-box-text-icon"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="more-features-box-text-description">
+                            <h3>Porquê escolher a gente ?</h3>
+                            <p>Contamos com profissionais preparados e qualificados, com uma estrutura e um local que
+                                está sempre pronto para atender a você e sua família.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ about/SobreNos-->
+<!--doctor team-->
+<section id="doctor-team" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="ser-title">Conheça nossos Funcionários!</h2>
+                <hr class="botm-line">
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="thumbnail">
+                    <img src="img/doctor1.jpg" alt="..." class="team-img">
+                    <div class="caption">
+                        <h3>Pedro Andrade</h3>
+                        <p>Chemical</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="thumbnail">
+                    <img src="img/doctor2.jpg" alt="..." class="team-img">
+                    <div class="caption">
+                        <h3>Higor</h3>
+                        <p>ugly one</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="thumbnail">
+                    <img src="img/doctor3.jpg" alt="..." class="team-img">
+                    <div class="caption">
+                        <h3>Elma</h3>
+                        <p>Função</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="thumbnail">
+                    <img src="img/doctor4.jpg" alt="..." class="team-img">
+                    <div class="caption">
+                        <h3>Caio</h3>
+                        <p>Group Guardian</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ doctor team-->
+<!--testimonial-->
+<section id="testimonial" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="ser-title">O que nossos Clientes estão falando?</h2>
+                <hr class="botm-line">
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="testi-details">
+                    <!-- Paragraph -->
+                    <p>Meu Deus, eles são muito foda.</p>
+                </div>
+                <div class="testi-info">
+                    <!-- User Image -->
+                    <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+                    <!-- User Name -->
+                    <h3>untrusty<span>Cliente</span></h3>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="testi-details">
+                    <!-- Paragraph -->
+                    <p>Cara, que galera bacana, muito bom.</p>
+                </div>
+                <div class="testi-info">
+                    <!-- User Image -->
+                    <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+                    <!-- User Name -->
+                    <h3>untrusty<span>Cliente</span></h3>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="testi-details">
+                    <!-- Paragraph -->
+                    <p>Amigos, podem confiar, olhem as fotos dessa equipe.</p>
+                </div>
+                <div class="testi-info">
+                    <!-- User Image -->
+                    <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+                    <!-- User Name -->
+                    <h3>untrusty<span>Cliente</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ testimonial-->
+<!--cta 2-->
+<section id="cta-2" class="section-padding">
+    <div class="container">
+        <div class=" row">
+            <div class="col-md-2"></div>
+            <div class="text-right-md col-md-4 col-sm-4">
+                <h2 class="section-title white lg-line"> Algumas curiosidades<br> Sobre Nós</h2>
+            </div>
+            <div class="col-md-4 col-sm-5">
+                Texto sobre informações sobre a empresa.
+                <p class="text-right text-primary"><i>— Nome do Dono</i></p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<!--cta-->
+<!--contact-->
+<section id="contact" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="ser-title">Contato</h2>
+                <hr class="botm-line">
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <h3>Informação de contato</h3>
+                <div class="space"></div>
+                <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>Nome da Rua<br>
+                    Complemento</p>
+                <div class="space"></div>
+                <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>Email@nomedaempresa.com</p>
+                <div class="space"></div>
+                <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>(ddd) Número da empresa</p>
+            </div>
+            <div class="col-md-8 col-sm-8 marb20">
+                <div class="contact-info">
+                    <h3 class="cnt-ttl">Fale conosco</h3>
+                    <div class="space"></div>
+                    <div id="sendmessage">Sua mensagem foi enviada, obrigado!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control br-radius-zero" id="name"
+                                   placeholder="Seu nome" data-rule="minlen:4"
+                                   data-msg="Por favor, no mínimo 4 digitos"/>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control br-radius-zero" name="email" id="email"
+                                   placeholder="Seu E-mail" data-rule="email"
+                                   data-msg="Por favor, use um e-mail válido"/>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control br-radius-zero" name="subject" id="subject"
+                                   placeholder="Assunto" data-rule="minlen:4"
+                                   data-msg="Por favor, no mínimo 8 digitos no assunto"/>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required"
+                                      data-msg="Por favor, escreva algo pra nós." placeholder="Mensagem"></textarea>
+                            <div class="validation"></div>
+                        </div>
+
+                        <div class="form-action">
+                            <button type="submit" class="btn btn-form">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ contact-->
+<!--footer-->
+<footer id="footer">
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 marb20">
+                    <div class="ftr-tle">
+                        <h4 class="white no-padding">Sobre Nós</h4>
+                    </div>
+                    <div class="info-sec">
+                        <p>Somos uma empresa séria e comprometida com a satisfação do cliente.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 marb20">
+                    <div class="ftr-tle">
+                        <h4 class="white no-padding">Atalhos</h4>
+                    </div>
+                    <div class="info-sec">
+                        <ul class="quick-info">
+                            <li><a href="index.html"><i class="fa fa-circle"></i>Início</a></li>
+                            <li><a href="#service"><i class="fa fa-circle"></i>Serviços</a></li>
+                            <li><a href="#contact"><i class="fa fa-circle"></i>Fale Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 marb20">
+                    <div class="ftr-tle">
+                        <h4 class="white no-padding">Siga-nos nas redes sociais</h4>
+                    </div>
+                    <div class="info-sec">
+                        <ul class="social-icon">
+                            <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                            <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                            <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                            <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    © Copyright Ktracaengemark. Todos os direitos reservados.
+                    <div class="credits">
+                        <!--
+                                All the links in the footer should remain intact.
+                                You can delete the links only if you purchased the pro version.
+                                Licensing information: https://bootstrapmade.com/license/
+                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
+                        -->
+                        Feito Por <a href="https://www.ktracaengemark.com.br/site">Ktracaengemark</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/ footer-->
+
+
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/funcoes.js"></script>
+
+
+</body>
 </html>
