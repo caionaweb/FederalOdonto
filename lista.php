@@ -21,9 +21,13 @@
                 <thead>
                 <tr>
                     <th>Usuário</th>
+                    <th>E-mail</th>
+                    <th>Fone</th>
+
                     <th>Mês</th>
                     <th>Dia</th>
                     <th>Hora</th>
+
                 </tr>
                 </thead>
                 <tbody>
@@ -37,13 +41,13 @@
 
 
                 $result = mysqli_query($con, "SELECT usuario.nome as usuario, agendamentos.mes as mes,  
-    agendamentos.horario_id as dia_h 
+    agendamentos.horario_id as dia_h , usuario.email as email , usuario.telefone as fone
     FROM `agendamentos` 
                 INNER JOIN `usuario` on usuario.id = agendamentos.usuario_id 
      ;");
 
                 $result2 = mysqli_query($con, "SELECT horario.horario as hora,  
-    agendamentos.horario_id as agenda, horario.dia as dia  
+    agendamentos.horario_id as agenda, horario.dia as dia
     FROM `horario` 
     INNER JOIN `agendamentos` on horario.id = agendamentos.horario_id   
      ;");
@@ -55,7 +59,12 @@
                 while ($row = mysqli_fetch_array($result)) {
                     $row2 = mysqli_fetch_array($result2);
                     echo "<tr>";
-                    echo "<td>" . " " . $row['usuario'] . "</td>" . "<td>" . " " . $row['mes'] . "</td>" . "<td>" . "  " . $row2['dia'] . "</td>" . "<td>" . " " . $row2['hora'] . "</td>";
+                    echo "<td>" . " " . $row['usuario'] . "</td>"
+                        . "</td>" . "<td>" . " " . $row['email'] . "</td>"
+                        . "</td>" . "<td>" . " " . $row['fone'] . "</td>"
+                        . "<td>" . " " . $row['mes']
+                        . "</td>" . "<td>" . "  " . $row2['dia']
+                        . "</td>" . "<td>" . " " . $row2['hora'] . "</td>" ;
                     echo "</tr>";
                 }
 

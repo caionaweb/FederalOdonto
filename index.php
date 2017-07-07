@@ -38,13 +38,13 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#banner">Início</a></li>
                             <li class=""><a href="#service">Serviços</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="carregaMes()">Agendar
+                            <li><a href="#" data-toggle="modal" data-target="#formulariomodal" onclick="carregaMes()">Agendar
                                     Consulta</a></li>
                             <li class=""><a href="#testimonial">Depoimentos</a></li>
                             <li class=""><a href="#about">Sobre Nós</a></li>
                             <li class=""><a href="#doctor-team">Nossos Colaboradores</a></li>
                             <li class=""><a href="#contact">Fale Conosco</a></li>
-
+                            <li><a href="#" data-toggle="modal" data-target="#formulariomodal" onclick="carregaLista()">Listar Consulta</a></li>
 
                         </ul>
                     </div>
@@ -74,13 +74,13 @@
 <!--/ banner-->
 
 <!--login-->
-<form id="logingform" action="/" method="post">
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<form id="modalform" action="/" method="post">
+    <div class="modal fade" id="formulariomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
-                                class="sr-only">Close</span></button>
+                                class="sr-only">Fechar</span></button>
                     <h4 class="modal-title" id="myModalLabel">Datas Disponíveis</h4>
                 </div>
 
@@ -98,8 +98,8 @@
                 </div>
             </div>
         </div>
-    </div><!-- end become a member modal -->
-</form> <!-- end login form -->
+    </div>
+</form>
 
 
 <!--/login>

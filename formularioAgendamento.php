@@ -24,10 +24,10 @@ $listaHorarios = $horarioDao->listaHorarios($dia, $mes);
 <body>
 
 
-<form class="form-horizontal" action="agendar.php" method="post">
+<form class="form-horizontal" action="agendar.php" onSubmit="return ( verifica() )" method="post">
     <fieldset>
         <!-- Form Name -->
-        <legend>Conformação</legend>
+        <legend>Confirmação</legend>
 
         <input type="hidden" name="dia" value="<?= $dia ?>">
         <input type="hidden" name="mes" value="<?= $mes ?>">
@@ -59,9 +59,9 @@ $listaHorarios = $horarioDao->listaHorarios($dia, $mes);
 
         <!-- Text input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="telefone">Telefone</label>
+            <label class="col-md-4 control-label" for="telefone">Telefone Celular</label>
             <div class="col-md-4">
-                <input id="telefone" name="telefone" type="text" placeholder="Telefone para contato"
+                <input pattern="^\d{11}$" type="tel" id="telefone" name="telefone" placeholder="Ex.: 62987654321"
                        class="form-control input-md" required="">
 
             </div>
@@ -71,8 +71,9 @@ $listaHorarios = $horarioDao->listaHorarios($dia, $mes);
         <div class="form-group">
             <label class="col-md-4 control-label" for="email">E-mail</label>
             <div class="col-md-4">
-                <input id="email" name="email" type="text" placeholder="Seu Email" class="form-control input-md"
+                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" type="text" placeholder="Seu Email" class="form-control input-md"
                        required="">
+
 
             </div>
         </div>
