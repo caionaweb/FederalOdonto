@@ -2,34 +2,31 @@
 
 Laboratório da turma de Programação para Web.
 
+
 ## Para rodar o projeto
 
 ### Para fazer clone.
 
 `git clone https://github.com/caionaweb/FederalOdonto`
 
-### Para rodar com o Tomcat na porta padrão (8080).
+### Para instalar o aplicativo
 
-`mvnw org.apache.tomcat.maven:tomcat7-maven-plugin:run`
+- Mova a pasta clonada para o diretório de http do seu webserver. Por exemplo, no Windows com o Xampp instalado, a pasta seria "C:\xampp\htdocs\"
 
-### Para rodar com o Tomcat com uma porta alternativa da padrão (8080).
+- Crie um banco de dados (instância) no sgbd de sua escolha (MySQL por exemplo)
 
-`mvnw org.apache.tomcat.maven:tomcat7-maven-plugin:run -Dmaven.tomcat.port=8181`
+- Importe o arquivo "FederalOdontoBD.sql" para o BD
 
-No Linux, use `./mvnw` ao invés de apenas `mvnw`, como no Windows. Além disso, pelo menos uma vez, é preciso dar permissão de execução ao arquivo de script **mvnw** com o comando `chmod +x mvnw`.
+- Edite o arquivo "conecta.php" com os dados de acesso e o nome do banco de dados. Por padrão o endereço do servidor é "localhost", usuário "root", sem senha e o nome do BD é "agendamentoOnline". Todos esses dados podem variar de acordo com seu ambiente
 
-## Para acessar a aplicação
+- Pronto, agora é só acessar no endereço 'http://localhost/FederalOdonto' em qualquer navegador
 
-`http://localhost:8181/FederalOdonto` em qualquer navegador.
 
-### Para "empacotar" a aplicação.
+### Observações sobre o projeto
 
-`mvnw package`
+Parte do projeto foi feita usando MVC, mas há algumas exceções a serem arrumadas posteriormente (TODO)
 
-## Para "preparar" o projeto
+Qualquer sujestão, melhoria ou crítica, fique a vontade para clonar o projeto e fazer sua própria versão
 
-### Para "embutir" o Maven no projeto.
 
-Não precisa fazer isso! Já foi feito. :)
-
-`mvn io.takari:maven:0.3.3:wrapper -Dmaven=3.3.9`
+### BE FREE!
