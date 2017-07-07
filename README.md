@@ -5,11 +5,17 @@ Laboratório da turma de Programação para Web.
 
 ## Para rodar o projeto
 
-### Para fazer clone.
+### Requisitos
+
+- PHP 5.6 ou superior
+- Banco de Dados BMySQL ou MariaDB (ou compatível)
+- Um navegador que suporte HTML5
+
+### Clonar
 
 `git clone https://github.com/caionaweb/FederalOdonto`
 
-### Para instalar o aplicativo
+### Instalar
 
 - Mova a pasta clonada para o diretório de http do seu webserver. Por exemplo, no Windows com o Xampp instalado, a pasta seria "C:\xampp\htdocs\"
 
@@ -22,7 +28,7 @@ Laboratório da turma de Programação para Web.
 - Pronto, agora é só acessar no endereço 'http://localhost/FederalOdonto' em qualquer navegador
 
 
-### Observações sobre o projeto
+### Observações
 
 Parte do projeto foi feita usando MVC, mas há algumas exceções a serem arrumadas posteriormente (TODO)
 
