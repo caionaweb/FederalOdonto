@@ -38,13 +38,14 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#banner">Início</a></li>
                             <li class=""><a href="#service">Serviços</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#formulariomodal" onclick="carregaMes()">Agendar
-                                    Consulta</a></li>
-                            <li class=""><a href="#testimonial">Depoimentos</a></li>
                             <li class=""><a href="#about">Sobre Nós</a></li>
                             <li class=""><a href="#doctor-team">Nossos Colaboradores</a></li>
+                            <li class=""><a href="#testimonial">Depoimentos</a></li>
                             <li class=""><a href="#contact">Fale Conosco</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#formulariomodal" onclick="carregaLista()">Listar Consulta</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#formulariomodal" onclick="carregaMes()">Agendar
+                                    Consulta</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#formulariomodal" onclick="carregaLista()">Listar
+                                    Consulta</a></li>
 
                         </ul>
                     </div>
@@ -75,7 +76,8 @@
 
 <!--login-->
 <form id="modalform" action="/" method="post">
-    <div class="modal fade" id="formulariomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="formulariomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -190,16 +192,10 @@
                             <tbody>
                             <tr>
                                 <td>Segunda à Sexta</td>
-                                <td>8:00 - 17:00</td>
+                                <td>7:00 - 17:00</td>
                             </tr>
                             <tr>
-                                <td>Sábado</td>
-                                <td>9:30 - 17:30</td>
-                            </tr>
-                            <tr>
-                                <td>Domingo</td>
-                                <td>9:30 - 15:00</td>
-                            </tr>
+
                             </tbody>
                         </table>
                     </div>

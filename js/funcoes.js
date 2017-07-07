@@ -8,6 +8,14 @@ function carregaForm(dados) {
 
 function carregaMes() {
 
+    $('#modalform').find('.modal-dialog').css({
+        width: '50%',
+        height: '50%',
+        'max-height': '50%'
+    });
+
+    $('#myModalLabel').text("Agendar Consultas");
+
     $.get('mes.php', function (resultado) {
         $('#mes').html(resultado);
     })
@@ -30,20 +38,21 @@ function anteriorMes() {
     })
 }
 
-    function carregaLista() {
+function carregaLista() {
 
 
+    $.get('lista.php', function (resultado) {
 
-        $.get('lista.php', function (resultado) {
+        $('#modalform').find('.modal-dialog').css({
+            width: 'auto',
+            height: 'auto',
+            'max-height': '50%'
+        });
 
-                $('#modalform').find('.modal-dialog').css({width:'auto',
-                    height:'auto',
-                    'max-height':'100%'});
+        $('#myModalLabel').text("Consultas Agendadas");
+        $('#mes').html(resultado);
 
-            $('#myModalLabel').text("Consultas Agendadas");
-            $('#mes').html(resultado);
-
-        })
-    }
+    })
+}
 
 
